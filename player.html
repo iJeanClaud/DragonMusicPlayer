@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="http://radio.craftlandia.com.br/templates/radiowave/js/jquery.min.js"></script>
+	<script type="text/javascript" src="http://radio.craftlandia.com.br/templates/radiowave/js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="http://radio.craftlandia.com.br/templates/radiowave/js/player-code.js"></script>
+	<script src="http://radio.craftlandia.com.br/radio-player/jquery.cookie.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+	<script language="javascript" type="text/javascript" src="http://radio.craftlandia.com.br:2199/system/streaminfo.js"></script>
+	<title>Craftlandia - Player</title>
+	<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="dragon_img" class="dragon_img"></div>
+		<div id="craftlandia_player" class="jp-jplayer" style="height: 0px;"></div>
+			<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+				<div class="jp-gui jp-interfacee">
+					<ul class="jp-volume-controls">
+						<li id="player-li">
+							<a href="javascript:;" style="display:block;" class="jp-play" title="Reproduzir"></a>
+							<a href="javascript:;" style="display:none;" class="jp-pause" title="Pausar"></a>
+						</li>
+						<li id="album-cover">
+							<div class="album" title="Capa do álbum">
+								<img id="cc_strinfo_trackimageurl_dj" class="cc_streaminfo" />
+							</div>
+						</li>
+						<li id="volume-li">
+							<div class="jp-volume-bar progress-bar blue stripes">
+								<span style="width: 40%" class="jp-volume-bar-value" title="Volume"></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="copyright">
+				<span><a href="http://radio.craftlandia.com.br" target="new" id="copyright-text"></a></span>
+			</div>
+			<div id="musicinfo">
+				<marquee width="200" height="20" scrolldelay="150" direction="left" behavior="slide">
+					<span id="cc_strinfo_trackartist_dj" title="Artista" class="cc_streaminfo trackinfo_artist"></span>
+					<span class="separador">-</span>
+					<span id="cc_strinfo_tracktitle_dj" title="Música" class="cc_streaminfo trackinfo_title"></span>
+				</marquee>
+			</div>
+			<div id="dj-craftlandia">
+				<span id="cc_strinfo_title_dj" class="cc_streaminfo" title="DJ No ar"></span><br/>
+			</div>
+	</body>
+</html>

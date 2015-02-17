@@ -1,0 +1,217 @@
+div#player{
+	width: 349px;
+	height: 115px;
+}
+
+#dragon_img{
+	background: url(../img/dragon.png);
+	width: 194px;
+	height: 179px;
+	float: left;
+	position: relative;
+	z-index: 2;
+	margin-left: 200px;
+}
+#jp_container_1 ul{
+	list-style:         none !important;
+}
+
+div#craftlandia_player{
+	width: 364px;
+	height: 56px;
+	background: url(../img/bg.png) no-repeat;
+	float: left;
+	position: fixed;
+	/*left: 1pt;
+	top: 1pt;*/
+	border-radius: 4px;
+	margin-top: 96px;
+	margin-left: 4px;
+}
+
+.jp-play{
+	width: 41px;
+	height: 35px;
+	background: url(../img/play_button.png) no-repeat;
+	z-index: 6;
+	float: left;
+	position: relative;
+	margin-left: -385px;
+	margin-top: 107px;
+	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+}
+
+.jp-play:hover{
+	width: 41px;
+	height: 35px;
+	background: url(../img/play_hover.png) no-repeat;
+	z-index: 6;
+	float: left;
+	position: relative;
+	margin-left: -385px;
+	margin-top: 107px;
+}
+
+.jp-pause{
+	width: 41px;
+	height: 35px;
+	background: url(../img/pause_button.png) no-repeat;
+	z-index: 6;
+	float: left;
+	position: relative;
+	margin-left: -385px;
+	margin-top: 107px;
+	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+}
+
+.jp-pause:hover{
+	width: 41px;
+	height: 35px;
+	background: url(../img/pause_hover.png) no-repeat;
+	z-index: 6;
+	float: left;
+	position: relative;
+	margin-left: -385px;
+	margin-top: 107px;
+}
+
+.progresso-barra-75{
+	z-index: 1;
+	float: right;
+	position: relative;
+	margin-right: 146px;
+	margin-top: 53px;
+}
+
+.album{
+	width: 43px;
+	height: 42px;
+	z-index: 0;
+	position: relative;
+	float: left;
+	margin-top: 103px;
+	margin-left: -77px;
+	background: url(../img/cover_bg.png) no-repeat;
+}
+
+#cc_strinfo_title_dj{
+	margin-left: -15px;
+}
+
+.cc_streaminfo{
+	width: 43px;
+	height: 42px;
+	border-radius: 5px;
+}
+
+div#copyright a{
+	width: 118px;
+	height: 7px;
+	background: url(../img/credits.png) no-repeat;
+	z-index: 20;
+	float: left;
+	position: relative;
+	margin-left: -268px;
+	margin-top: 152px;
+	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+}
+
+div#copyright:hover a{
+	width: 118px;
+	height: 7px;
+	background: url(../img/credits_hover.png) no-repeat;
+	z-index: 20;
+	float: left;
+	position: relative;
+	margin-left: -268px;
+	margin-top: 152px;
+	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+}
+
+span.separador{
+	font-size: 14px;
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+	padding: 1px;
+	margin-left: 2px;
+	color: #ffffff;
+	text-shadow: 0 0 0.2em orange;
+	text-shadow:1px 2px black;
+}
+.jp-volume-bar-value{
+	border-radius: 2px;
+	background: #9cc94f;
+	float: left;
+	height: 4px;
+	position: relative;
+	z-index: 10;
+}
+
+.jp-volume-bar{
+	background: #fff;
+	border-radius: 2px;
+	float: left;
+	height: 4px;
+	width: 180px;
+	margin-top: 139px;
+	margin-left: -330px;
+	position: relative;
+	z-index: 10;
+}
+
+div#musicinfo{
+	width: 215px;
+	font-size: 14px;
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+	float: left;
+	margin-left: -330px;
+	margin-top: 115px;
+	cursor:default;
+	/*line-height: 70%;*/
+	/**/
+}
+
+
+.trackinfo_title{
+	color: #ffffff;
+	text-shadow: 0 0 0.2em orange;
+	text-shadow:1px 2px black;
+}
+
+.trackinfo_artist{
+	color: #9cc94f;
+	text-shadow: 0 0 0.2em black;
+	text-shadow:1px 2px black;
+}
+
+div#dj-craftlandia{
+	width: 215px;
+	font-size: 19px;
+	font-family: 'Squada One', cursive;
+	position: relative;
+	float: left;
+	margin-left: -315px;
+	margin-top: 100px;
+	cursor:default;
+	color: #ffffff;
+	text-shadow:1px 2px black;
+	/*line-height: 70%;*/
+	/**/
+}
