@@ -9,7 +9,7 @@
 //<![CDATA[
 $(document).ready(function(){
 	var stream = {
-		title: "Rádio CraftLandia",
+		title: "RÃ¡dio CraftLandia",
 		mp3: "http://74.91.117.97:8000/;stream/1",
 	},
 	ready = false,
@@ -35,7 +35,7 @@ $(document).ready(function(){
 			}
 		},
 		play: function(){
-                        // On pause function, define 'play' cookie.
+                        // On play function, define 'play' cookie.
 			$.cookie('radio_player', 'play', { expires: 7 });
 		},
 		pause: function() {
