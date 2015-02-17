@@ -13,7 +13,7 @@ div#player{
 	margin-left: 200px;
 }
 #jp_container_1 ul{
-	list-style:         none !important;
+	list-style: none !important;
 }
 
 div#craftlandia_player{
@@ -22,8 +22,6 @@ div#craftlandia_player{
 	background: url(../img/bg.png) no-repeat;
 	float: left;
 	position: fixed;
-	/*left: 1pt;
-	top: 1pt;*/
 	border-radius: 4px;
 	margin-top: 96px;
 	margin-left: 4px;
@@ -184,8 +182,6 @@ div#musicinfo{
 	margin-left: -330px;
 	margin-top: 115px;
 	cursor:default;
-	/*line-height: 70%;*/
-	/**/
 }
 
 
@@ -212,6 +208,4 @@ div#dj-craftlandia{
 	cursor:default;
 	color: #ffffff;
 	text-shadow:1px 2px black;
-	/*line-height: 70%;*/
-	/**/
 }
