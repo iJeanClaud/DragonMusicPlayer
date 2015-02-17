@@ -4,35 +4,42 @@
 *
 * Copyright 2014, DeathStroker
 * Released under the GNU license
+* Based on JPlayer API.
 */
 //<![CDATA[
 $(document).ready(function(){
 	var stream = {
-		title: "RÃ¡dio CraftLandia",
+		title: "Rádio CraftLandia",
 		mp3: "http://74.91.117.97:8000/;stream/1",
 	},
 	ready = false,
 	eurlattempts = 0;
-
+        
+        //Get the div name and start JPlayer control
 	$("#craftlandia_player").jPlayer({
 		ready: function (event) {
+                    
+                        //If cookie is not defined, set cookie 'play' to autostart.
 			if ($.cookie('radio_player') == undefined){
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
 			}
-				
+			
+                        //If cookie 'play' exist, do play.
 			if ($.cookie('radio_player') == "play"){
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
+                        //If not, pause.
 			}else{
 				if ($.cookie('radio_player') == "pause"){
 					$(this).jPlayer("setMedia", stream);
 				}
 			}
-			//$.dbg('ready');
 		},
 		play: function(){
+                        // On pause function, define 'play' cookie.
 			$.cookie('radio_player', 'play', { expires: 7 });
 		},
 		pause: function() {
+                        // On pause function, define 'pause' cookie.
 			$.cookie('radio_player', 'pause', { expires: 7 });
 			$(this).jPlayer("clearMedia");
 			$(this).jPlayer("setMedia", stream);
@@ -54,7 +61,7 @@ $(document).ready(function(){
 				$('#jp_container_1 .jp-info-bar').text('Error: '+event.jPlayer.error.message+' '+event.jPlayer.error.hint+' ('+event.jPlayer.error.type+' context '+event.jPlayer.error.context+')' + ( event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET ? 'Y':'N') );
 			}
 		},
-		swfPath: "http://localhost/mini-player/js/player.swf",
+		swfPath: "player.swf",
 		supplied: "mp3",
 		solution: "flash,html",
 		wmode: "window",

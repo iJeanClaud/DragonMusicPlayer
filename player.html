@@ -1,21 +1,31 @@
+<!--Craftlandia DragonPlayer
+
+Copyright 2015, DeathStroker
+Released under the GNU license-->
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="http://radio.craftlandia.com.br/templates/radiowave/js/jquery.min.js"></script>
 	<script type="text/javascript" src="http://radio.craftlandia.com.br/templates/radiowave/js/jquery.jplayer.min.js"></script>
 	<script type="text/javascript" src="http://radio.craftlandia.com.br/templates/radiowave/js/player-code.js"></script>
+        <script language="javascript" type="text/javascript" src="http://radio.craftlandia.com.br:2199/system/streaminfo.js"></script>
 	<script src="http://radio.craftlandia.com.br/radio-player/jquery.cookie.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-	<script language="javascript" type="text/javascript" src="http://radio.craftlandia.com.br:2199/system/streaminfo.js"></script>
-        //First comment
+        
         <title>Craftlandia - Player</title>
 	<meta charset="utf-8">
-	</head>
+    </head>
 	<body>
+                <!-- Player body -->
+                <div id='player_body'></div>
+            
+                <!-- Div dragon img -->
 		<div id="dragon_img" class="dragon_img"></div>
+                
+                <!-- Div Player -->
 		<div id="craftlandia_player" class="jp-jplayer" style="height: 0px;"></div>
 			<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 				<div class="jp-gui jp-interfacee">
@@ -51,4 +61,4 @@
 				<span id="cc_strinfo_title_dj" class="cc_streaminfo" title="DJ No ar"></span><br/>
 			</div>
 	</body>
-</html>
+</html
